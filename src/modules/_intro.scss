@@ -1,0 +1,27 @@
+.intro {    
+    height: 50%;
+    background: $yellow;
+
+    &__inner {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    &__bg {
+        position: relative;
+        width: 100%;       
+        margin-top: -40px;        
+    }
+
+    &__man {
+        width: 38%;
+        position: absolute;
+        left: 20%;
+        top: 20%;
+        transform: rotateZ(-5deg);        
+        z-index: 2
+    }
+}

@@ -1,0 +1,18 @@
+.header {
+    width: 100%;    
+    height: 82px;    
+
+    &__inner {
+        margin: 0 135px;
+        padding-top: 25px;
+        display: flex;
+        justify-content: space-between;        
+    }
+
+    &__menu {
+        width: 353px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }    
+}

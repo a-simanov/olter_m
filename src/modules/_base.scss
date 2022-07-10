@@ -1,0 +1,80 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    }
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;  
+
+    &:hover {
+        cursor: pointer;
+        text-shadow: 1px 1px 1px black;      
+    }
+}
+
+input {
+    border: none;
+}
+
+.btn {
+    border: none;
+    background: none;
+    color: $brown;
+
+    &_yellow {
+        width: 120px;
+        height: 40px;
+        border-radius: 20px;
+        background: $yellow;
+    }
+
+    &_red {
+        width: 234px;
+        height: 69px;
+        border: 8px solid white;
+        border-radius: 34px;
+        background: $red;
+        color: white;
+    }
+
+    &:hover {
+        cursor: pointer;
+        text-shadow: 1px 1px 1px black;      
+    }
+}
+
+.container {
+    position: relative;    
+    margin: 0 auto;    
+}
+
+.link-item {
+    font-family: $PFD_Medium;
+    font-size: 16px;
+    font-weight: 500;    
+}
+
+.modal-open {
+    height: 100vh;
+    overflow: hidden;
+  }
+
+.visible {
+    display: flex;
+}
+
+.hidden {
+    display: none;
+}

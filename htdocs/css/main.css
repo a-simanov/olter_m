@@ -1,0 +1,333 @@
+@font-face {
+  font-family: "PFDinTextCondPro";
+  font-style: normal;
+  font-weight: 700;
+  src: local("PFDinTextCondPro"), url("../fonts/PFDinTextCondPro-Bold.ttf") format("ttf"), url("../fonts/pfdintextcondpro-bold.woff2") format("woff2"), url("../fonts/pfdintextcondpro-bold.woff") format("woff");
+}
+@font-face {
+  font-family: "PFDinTextCondPro";
+  font-style: normal;
+  font-weight: 500;
+  src: local("PFDinTextCondPro"), url("../fonts/PFDinTextCondPro-Medium.ttf") format("ttf"), url("../fonts/pfdintextcondpro-Medium.woff2") format("woff2"), url("../fonts/pfdintextcondpro-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "PFDinTextCondPro";
+  font-style: normal;
+  font-weight: 400;
+  src: local("PFDinTextCondPro"), url("../fonts/PFDinTextCondPro-Regular.ttf") format("ttf"), url("../fonts/pfdintextcondpro-Regular.woff2") format("woff2"), url("../fonts/pfdintextcondpro-Regular.woff") format("woff");
+}
+.header {
+  width: 100%;
+  height: 82px;
+}
+.header__inner {
+  margin: 0 135px;
+  padding-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.header__menu {
+  width: 353px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  cursor: pointer;
+  text-shadow: 1px 1px 1px black;
+}
+
+input {
+  border: none;
+}
+
+.btn {
+  border: none;
+  background: none;
+  color: #5A1404;
+}
+.btn_yellow {
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+  background: #FFCD00;
+}
+.btn_red {
+  width: 234px;
+  height: 69px;
+  border: 8px solid white;
+  border-radius: 34px;
+  background: #e63000;
+  color: white;
+}
+.btn:hover {
+  cursor: pointer;
+  text-shadow: 1px 1px 1px black;
+}
+
+.container {
+  position: relative;
+  margin: 0 auto;
+}
+
+.link-item {
+  font-family: "PFDinTextCondPro", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.modal-open {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.visible {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+.section {
+  width: 100%;
+}
+
+.footer {
+  width: 100%;
+  margin-top: 80px;
+  border-top: 5px solid #FFCD00;
+}
+.footer__inner {
+  margin: 22px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 135px;
+}
+.footer__links {
+  display: flex;
+  justify-content: space-between;
+  font-family: "PFDinTextCondPro", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #5A1404;
+  width: 100%;
+}
+.footer__privacy {
+  margin: 0 165px;
+  display: flex;
+  align-items: flex-start;
+}
+.footer__privacy a:nth-child(2) {
+  margin: 0 70px;
+}
+.footer__contacts {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__tel {
+  font-family: "PFDinTextCondPro", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #e63000;
+  text-align: left;
+}
+.footer__social {
+  display: flex;
+}
+.footer__social-item {
+  margin: 0 5px;
+  width: 32px;
+  height: 32px;
+  background-color: #FFCD00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+.footer__social-item:hover {
+  cursor: pointer;
+  background-color: #cea70c;
+}
+.footer__copy {
+  font-family: "PFDinTextCondPro", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #5A1404;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.intro {
+  height: 50%;
+  background: #FFCD00;
+}
+.intro__inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.intro__bg {
+  position: relative;
+  width: 100%;
+  margin-top: -40px;
+}
+.intro__man {
+  width: 38%;
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  transform: rotateZ(-5deg);
+  z-index: 2;
+}
+
+.promo {
+  position: relative;
+  width: 100%;
+  background-color: #FFCD00;
+  padding-top: 80px;
+  padding-bottom: 30px;
+}
+.promo__title {
+  font-family: "PFDinTextCondPro", sans-serif;
+  font-size: 60px;
+  font-weight: 500;
+  color: #e63000;
+  text-align: center;
+  text-shadow: white -2px 5px 0;
+}
+.promo__img {
+  position: absolute;
+  top: 0;
+}
+.promo__img_left {
+  left: 57px;
+}
+.promo__img_right {
+  right: 74px;
+}
+.promo__inner {
+  display: flex;
+  margin: 0 150px;
+  margin-top: 50px;
+}
+.promo__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.promo__item:not(:first-child) {
+  margin-left: 68px;
+}
+.promo__text {
+  font-family: "PFDinTextCondPro", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 22px;
+}
+.promo__arrow {
+  position: absolute;
+  bottom: 10px;
+  right: -50px;
+}
+
+.cheese {
+  position: relative;
+  width: 100%;
+}
+.cheese__img {
+  position: absolute;
+  top: -90px;
+}
+.cheese__img_left {
+  left: 26%;
+}
+.cheese__title {
+  font-family: "PFDinTextCondPro", sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  color: #5A1404;
+  text-align: center;
+  margin-top: 102px;
+  margin-bottom: 25px;
+}
+.cheese__swiper {
+  margin: 0 200px;
+}
+.cheese__slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+.cheese__picture {
+  width: 50%;
+}
+.cheese__text {
+  font-family: "PFDinTextCondPro", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: #5A1404;
+  text-align: center;
+  margin-top: 22px;
+}
+
+.modal {
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+}
+.modal__inner {
+  position: relative;
+  background-color: white;
+}
+.modal__content {
+  width: 600px;
+  height: 800px;
+}
+.modal__close {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  top: -50px;
+  right: -50px;
+}
+.modal__close img {
+  display: block;
+}
+.modal__close img:hover {
+  cursor: pointer;
+}

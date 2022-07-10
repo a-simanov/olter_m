@@ -1,0 +1,60 @@
+.promo {
+    position: relative;
+    width: 100%;
+    background-color: #FFCD00;  
+    padding-top: 80px;
+    padding-bottom: 30px;
+    
+    &__title {
+        font-family: $PFD_Medium;
+        font-size: 60px;
+        font-weight: 500;
+        color: $red;
+        text-align: center;   
+        text-shadow: white -2px 5px 0; 
+    }
+
+    &__img {
+        position: absolute;
+        top: 0;        
+
+        &_left {
+            left: 57px;
+        }
+        
+        &_right {
+            right: 74px;
+        }
+    }
+
+    &__inner {
+        display: flex;
+        margin: 0 150px;
+        margin-top: 50px;
+    }
+
+    &__item {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &:not(:first-child) {
+            margin-left: 68px;
+        }
+    }
+
+    &__text {      
+        font-family: $PFD_Regular;  
+        font-weight: 400;
+        font-size: 20px;
+        text-align: center;
+        margin-top: 22px;
+    }   
+    
+    &__arrow {
+        position: absolute;
+        bottom: 10px;
+        right: -50px;
+    }
+}

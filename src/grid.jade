@@ -1,0 +1,68 @@
+extends ./tpl/layout
+
+block page
+	.container
+		.component
+			.component__title Пример адаптивной сетки:
+			.grid
+				- for (var i = 0; i < 4; i++)
+					.grid__col.grid__col_12.grid__md-col_6.grid__lg-col_3
+						.block
+							p <b>lg: </b>.grid__lg-col_3
+							p <b>md: </b>.grid__md-col_6
+							p <b>sm: </b>.grid__col_12
+		.component
+			.component__title Пример адаптивной сетки с пуллом:
+			.grid
+				.grid__col.grid__col_10.grid__pull_1.grid__md-col_6.grid__md-pull_3.grid__lg-col_10.grid__lg-pull_1
+					.block
+						p <b>lg: </b>.grid__col_8.grid__pull_2
+						p <b>md: </b>.grid__md-col_6.grid__md-pull_3
+						p <b>sm: </b>.grid__sm-col_10.grid__sm-pull_1
+
+		.component
+			.component__title Пример адаптивной сетки с ордером:
+			.grid
+				.grid__col.grid__col_12.grid__order_1.grid__md-order_3.grid__lg-col_4.grid__lg-order_2
+					.block
+						b Col №1
+						p <b>lg: </b>.grid__lg-col_4.grid__lg-order_2
+						p <b>md: </b>.grid__md-order_3
+						p <b>sm: </b>.grid__col_12.grid__order_1
+				.grid__col.grid__col_12.grid__order_3.grid__md-order_1.grid__lg-col_4.grid__lg-order_3
+					.block
+						b Col №2
+						p <b>lg: </b>.grid__lg-col_4.grid__lg-order_3
+						p <b>md: </b>.grid__md-order_1
+						p <b>sm: </b>.grid__col_12.grid__order_1
+				.grid__col.grid__col_12.grid__order_1.grid__md-order_2.grid__lg-col_4.grid__lg-order_1
+					.block
+						b Col №3
+						p <b>lg: </b>.grid__lg-col_4.grid__lg-order_1
+						p <b>md: </b>.grid__md-order_2
+						p <b>sm: </b>.grid__col_12.grid__order_1
+
+		.component
+			.component__title Задание №1
+			.grid
+				.grid__col.grid__col_12.grid__md-col_4.grid__md-pull_2.grid__lg-col_6.grid__lg-pull_0
+					.block
+						b Col №1
+						p <b>lg: </b>.grid__lg-col_6.grid__lg-pull_0
+						p <b>md: </b>.grid__md-col_4.grid__md-pull_2
+						p <b>sm: </b>.grid__col_12
+				.grid__col.grid__col_12.grid__md-col_4.grid__lg-col_6
+					.block
+						b Col №2
+						p <b>lg: </b>.grid__lg-col_6
+						p <b>md: </b>.grid__md-col_4
+						p <b>sm: </b>.grid__col_12
+		.component
+			.component__title Задание №2
+			.grid
+				- for (var i = 0; i < 6; i++)
+					.grid__col.grid__col_12.grid__md-col_4.grid__lg-col_2
+						.block
+							p <b>lg: </b>.grid__lg-col_2
+							p <b>md: </b>.grid__md-col_4
+							p <b>sm: </b>.grid__col_12
