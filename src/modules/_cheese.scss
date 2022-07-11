@@ -23,6 +23,18 @@
 
     &__swiper {
         margin: 0 200px;
+
+        @media ($ph) {
+            margin: 0 10px;      
+        }
+
+        @media ($sm) {
+            margin: 0 20px;      
+        }
+
+        @media ($md) {
+            margin: 0 30px;      
+        }
     }
 
     &__slide {
@@ -33,7 +45,11 @@
     }
 
     &__picture {
-        width: 50%;
+        max-height: 200px;
+
+        @media ($ph) {
+            max-height: 140px;      
+        }
     }
 
     &__text {
@@ -44,4 +60,52 @@
         text-align: center;
         margin-top: 22px;
     }    
+}
+
+.swiper-buttons{
+    position: relative;    
+    cursor: pointer;
+    display: block;
+
+    @media ($sm) {
+        display: none;        
+    }
+}
+.swiper-button-next:after{
+    color: #5A1404;
+}
+.swiper-button-prev:after{
+    color: #5A1404;
+}
+
+.swiper-button-next {
+    position: absolute;
+    top: -170px;
+    right: 10%;   
+    
+    @media ($md) {
+        right: 0;
+    }
+}
+
+.swiper-button-prev {
+    position: absolute;
+    top: -170px;
+    left: 10%;
+
+    @media ($md) {
+        left: 0;
+    }
+}
+
+.swiper-pagination-bullets {
+    bottom: -50px;
+}
+
+.swiper-pagination-bullet {
+    background-color: #5B1A0D;
+}
+.swiper-pagination-bullet-active {
+    background-color: white;
+    border: 1px solid #5B1A0D;
 }

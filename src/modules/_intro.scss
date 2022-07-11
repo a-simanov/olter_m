@@ -13,7 +13,15 @@
     &__bg {
         position: relative;
         width: 100%;       
-        margin-top: -40px;        
+        margin-top: -40px; 
+        
+        @media ($sm) {
+            margin-top: -20px; 
+          }
+  
+          @media ($ph) {
+            margin-top: 0; 
+          }
     }
 
     &__man {
@@ -21,7 +29,6 @@
         position: absolute;
         left: 20%;
         top: 20%;
-        transform: rotateZ(-5deg);        
-        z-index: 2
+        transform: rotateZ(-5deg);
     }
 }

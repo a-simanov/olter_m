@@ -12,11 +12,19 @@
         color: $red;
         text-align: center;   
         text-shadow: white -2px 5px 0; 
+
+        @media ($lg) {
+            font-size: 50px;        
+        }
+
+        @media ($md) {
+            font-size: 40px;   
+        }
     }
 
     &__img {
         position: absolute;
-        top: 0;        
+        top: 0;               
 
         &_left {
             left: 57px;
@@ -25,12 +33,37 @@
         &_right {
             right: 74px;
         }
+
+        @media ($md) {
+            top: 200px;
+            width: 12%;         
+        }
     }
 
     &__inner {
         display: flex;
         margin: 0 150px;
         margin-top: 50px;
+
+        @media ($lg) {
+            margin-left: 20px;
+            margin-right: 20px;
+          }
+
+        @media (max-width: 960px) {
+            flex-direction: column;
+            padding: 0 340px;         
+        }
+
+        @media ($md) {
+            flex-direction: column;
+            padding: 0 100px;         
+        }
+
+        @media ($sm) {
+            flex-direction: column;
+            padding: 0 80px;         
+        }
     }
 
     &__item {
@@ -41,7 +74,12 @@
 
         &:not(:first-child) {
             margin-left: 68px;
-        }
+
+            @media (max-width: 960px) {
+                margin-left: 0;
+                margin-top: 63px;
+            }
+        }        
     }
 
     &__text {      
@@ -50,11 +88,26 @@
         font-size: 20px;
         text-align: center;
         margin-top: 22px;
+
+        @media (max-width: 960px) {
+            font-size: 34px;        
+        }
+
+        @media ($sm) {
+            font-size: 20px;        
+        }
     }   
     
     &__arrow {
         position: absolute;
-        bottom: 10px;
+        top: 70px;
         right: -50px;
+
+        @media (max-width: 960px) {   
+            position: relative;     
+            right: 0;    
+            transform: rotate(90deg);
+            top: 30px;
+        }
     }
 }

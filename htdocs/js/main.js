@@ -2,7 +2,7 @@
 const swiper = new Swiper('.swiper', {
     direction: 'horizontal',
     loop: true,
-    slidesPerView: 4,
+    slidesPerView: 2,
     spaceBetween: 40,     
     
     pagination: {
@@ -12,7 +12,17 @@ const swiper = new Swiper('.swiper', {
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
-    }
+    },
+
+    breakpoints: {
+      968: {
+        slidesPerView: 3,
+      },
+
+      1024: {
+        slidesPerView: 4,
+      },
+    },
 });
 
 /* Модльное окно */
